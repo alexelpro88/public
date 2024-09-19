@@ -1,0 +1,58 @@
+.contenedor /*padre*/
+{
+    background-color: aqua;
+    padding: 10px;
+    font-size: 23px;
+    text-align: center;
+    display: grid;
+    grid-gap: 10px;
+    /*grid-template-columns: 150px 200px 50px 20px;
+    grid-template-rows: 100px 50px 100px 100px;
+    grid-template-columns: 33% 33% 34%;
+    grid-template-rows: 20% 30% 50%;
+    height: 300px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 3fr;*/
+    grid-template-columns: repeat(4,1fr) 5fr; 
+    grid-template-rows: 2fr 1fr 8fr 2fr;
+}
+.contenedor>div
+{
+    background-color: orange;
+}
+.contenedor .uno/*hijo*/
+{
+    background-color: chartreuse;
+    grid-column: 1/5;
+    grid-row: 1/3;
+}
+.contenedor .dos
+{
+    background-color: rgb(255, 83, 80);
+    grid-column: 5/6;
+    grid-row: 1/3;
+}
+.contenedor .tres
+{
+    background-color: rgb(90, 86, 86);
+    grid-column: 1/6;
+    grid-row: 3/7;
+}
+.contenedor .cuatro
+{
+    background-color: beige;
+    grid-column: 1/3;
+    grid-row: 7/9;
+}
+.contenedor .cinco
+{
+    background-color: yellow;
+    grid-column: 3/4;
+    grid-row: 7/9;
+}
+.contenedor .seis
+{
+    background-color: rgb(212, 76, 243);
+    grid-column: 4/6;
+    grid-row: 7/9;
+}
